@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'New York Times';
+  src: url('../fonts/OldLondon.ttf');
+}
+
+header {
+  font-family: 'New York Times', sans-serif;
+  margin: 20px 0;
+  font-size: 2em;
+  color: #000000;
+}
