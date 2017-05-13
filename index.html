@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Wayne Cheng">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="src/w-favicon.ico">
 
 	<!-- Google Font Links -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"> -->
@@ -36,9 +35,15 @@
 
 				    <div class="form-group">
 				      <label for="numberOfResults" class="col-md-2 control-label">Number of Results</label>
-				      <div class="col-md-2">
-				        <input type="text" class="form-control" id="number-of-results" placeholder="10">
-				      </div>
+						<div class="col-md-2">
+                        <select class="form-control" id="numRecordsSelect">
+                            <option value=1>1</option>
+                            <!-- Setting the option for 10 as default -->
+                            <option value=5>5</option>
+                            <option value=10 selected>10</option>
+                        </select>        
+                      </div>
+
 				      <label for="startYear" class="col-md-2 control-label">Start Year (optional)</label>
 				      <div class="col-md-2">
 				        <input type="text" class="form-control" id="start-year" placeholder="YYYY">
@@ -51,8 +56,8 @@
 
 				    <div class="form-group">
 				      <div class="col-md-10 col-md-offset-2">
+				        <button id="submit" type="submit" class="btn btn-info">Submit</button>
 				        <button id="cancel" type="reset" class="btn btn-default">Cancel</button>
-				        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
 				      </div>
 				    </div>
 
@@ -61,11 +66,44 @@
 		</div> <!-- div.row -->
 	</div>
 
+	<div id="results" class="container-fluid">
+		<!-- <div class="row col-md-10 col-md-offset-1"></div> -->
+	</div>
+
 
 
 	<!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="nyc.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		
+	// // for... blah blah 
+	// 	var response = {"response": {"meta": {"hits": 236, "time": 11, "offset": 0 }, "docs": [{"web_url": "https://www.nytimes.com/interactive/2017/02/28/us/politics/in-their-choice-of-guests-trump-and-congressional-democrats-sent-dueling-messages.html", "snippet": "The issues represented by the guests of the first lady, Melania Trump, as well as by representatives and senators at President Trump’s first address to Congress....", "lead_paragraph": "The issues represented by the guests of the first lady, Melania Trump, as well as by representatives and senators at President Trump’s first address to Congress.", "abstract": null, "print_page": 0, "blog": [], "source": "The New York Times", "multimedia": [{"width": 75, "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbStandard.jpg", "rank": 0, "height": 75, "subtype": "thumbnail", "legacy": {"thumbnailheight": 75, "thumbnail": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbStandard.jpg", "thumbnailwidth": 75 }, "type": "image"}, {"width": 600, "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-articleLarge.jpg", "rank": 0, "height": 303, "subtype": "xlarge", "legacy": {"xlargewidth": 600, "xlarge": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-articleLarge.jpg", "xlargeheight": 303 }, "type": "image"}, {"width": 190, "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbWide.jpg", "rank": 0, "height": 126, "subtype": "wide", "legacy": {"wide": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbWide.jpg", "widewidth": 190, "wideheight": 126 }, "type": "image"} ], "headline": {"main": "In Their Choice of Guests, Trump and Congressional Democrats Sent Dueling Messages", "kicker": ""}, "keywords": [{"isMajor": "N", "rank": 1, "name": "persons", "value": "Trump, Donald J"}, {"isMajor": "N", "rank": 2, "name": "persons", "value": "Trump, Melania"} ], "pub_date": "2017-03-01T04:48:02+0000", "document_type": "multimedia", "news_desk": "U.S.", "section_name": "U.S.", "subsection_name": "Politics", "byline": {"person": [{"organization": "", "role": "reported", "rank": 1, "firstname": "Larry", "lastname": "BUCHANAN"}, {"organization": "", "role": "reported", "rank": 2, "firstname": "Alicia", "lastname": "PARLAPIANO"} ], "original": "By LARRY BUCHANAN and ALICIA PARLAPIANO"}, "type_of_material": "Interactive Feature", "_id": "58b6528a7c459f2525d1f189", "word_count": 0, "slideshow_credits": null } ] } }
 
+	// 	var r = response.docs;
+
+	// 	// docs >>> web_url, snippet, headline.main, pub_date?
+	// 	var wrap = $('<div>');
+	// 	wrap.addClass('result-wrap');
+
+
+	// 	var h2 = $('<h2>');
+	// 	var link = $('<a>');
+	// 	var p = $('<p>');
+
+	// 	h2.text( r.headline.main );
+	// 	link.attr('href', r.web_url);
+	// 	p.text(r.snippet);
+
+	// 	wrap.append(link);
+	// 	wrap.append(h2);
+	// 	wrap.append(p);
+
+
+
+
+
+	</script>
 </body>
 </html>
