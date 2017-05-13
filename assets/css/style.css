@@ -6,6 +6,12 @@
 header {
   font-family: 'New York Times', sans-serif;
   margin: 20px 0;
-  font-size: 2em;
+  font-size: 4em;
+  text-align: center;
   color: #000000;
+}
+
+.form-container {
+	padding: 20px;
+	outline: 1px solid #ccc;
 }

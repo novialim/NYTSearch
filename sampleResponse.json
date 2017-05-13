@@ -1,0 +1,104 @@
+{
+  "response": {
+    "meta": {
+      "hits": 236,
+      "time": 11,
+      "offset": 0
+    },
+    "docs": [
+      {
+        "web_url": "https://www.nytimes.com/interactive/2017/02/28/us/politics/in-their-choice-of-guests-trump-and-congressional-democrats-sent-dueling-messages.html",
+        "snippet": "The issues represented by the guests of the first lady, Melania Trump, as well as by representatives and senators at President Trump’s first address to Congress....",
+        "lead_paragraph": "The issues represented by the guests of the first lady, Melania Trump, as well as by representatives and senators at President Trump’s first address to Congress.",
+        "abstract": null,
+        "print_page": 0,
+        "blog": [],
+        "source": "The New York Times",
+        "multimedia": [
+          {
+            "width": 75,
+            "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbStandard.jpg",
+            "rank": 0,
+            "height": 75,
+            "subtype": "thumbnail",
+            "legacy": {
+              "thumbnailheight": 75,
+              "thumbnail": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbStandard.jpg",
+              "thumbnailwidth": 75
+            },
+            "type": "image"
+          },
+          {
+            "width": 600,
+            "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-articleLarge.jpg",
+            "rank": 0,
+            "height": 303,
+            "subtype": "xlarge",
+            "legacy": {
+              "xlargewidth": 600,
+              "xlarge": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-articleLarge.jpg",
+              "xlargeheight": 303
+            },
+            "type": "image"
+          },
+          {
+            "width": 190,
+            "url": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbWide.jpg",
+            "rank": 0,
+            "height": 126,
+            "subtype": "wide",
+            "legacy": {
+              "wide": "images/2017/02/28/us/politics/trump-speech-guests-first-lady-box-1488339424819/trump-speech-guests-first-lady-box-1488339424819-thumbWide.jpg",
+              "widewidth": 190,
+              "wideheight": 126
+            },
+            "type": "image"
+          }
+        ],
+        "headline": {
+          "main": "In Their Choice of Guests, Trump and Congressional Democrats Sent Dueling Messages",
+          "kicker": ""
+        },
+        "keywords": [
+          {
+            "isMajor": "N",
+            "rank": 1,
+            "name": "persons",
+            "value": "Trump, Donald J"
+          },
+          {
+            "isMajor": "N",
+            "rank": 2,
+            "name": "persons",
+            "value": "Trump, Melania"
+          }
+        ],
+        "pub_date": "2017-03-01T04:48:02+0000",
+        "document_type": "multimedia",
+        "news_desk": "U.S.",
+        "section_name": "U.S.",
+        "subsection_name": "Politics",
+        "byline": {
+          "person": [
+            {
+              "organization": "",
+              "role": "reported",
+              "rank": 1,
+              "firstname": "Larry",
+              "lastname": "BUCHANAN"
+            },
+            {
+              "organization": "",
+              "role": "reported",
+              "rank": 2,
+              "firstname": "Alicia",
+              "lastname": "PARLAPIANO"
+            }
+          ],
+          "original": "By LARRY BUCHANAN and ALICIA PARLAPIANO"
+        },
+        "type_of_material": "Interactive Feature",
+        "_id": "58b6528a7c459f2525d1f189",
+        "word_count": 0,
+        "slideshow_credits": null
+      },
