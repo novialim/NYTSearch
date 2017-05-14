@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<meta charset="UTF-8">
-	<meta name="author" content="Wayne Cheng">	
+	<meta name="author" content="Wayne Cheng/ Novia Lim/ Priyanka/ Jonathan Thinh">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Google Font Links -->
@@ -20,7 +20,7 @@
 <body>
     <header class="align-middle">New York Times Search</header>
 	<div class="container-fluid">
-		<div class="row col-md-8 col-md-offset-2 form-container">
+		<div class="row col-md-10 col-md-offset-1 form-container">
 			
 
 			<form class="form-horizontal ">
@@ -44,12 +44,12 @@
                         </select>        
                       </div>
 
-				      <label for="startYear" class="col-md-2 control-label">Start Year (optional)</label>
-				      <div class="col-md-2">
+				      <label for="startYear" class="col-md-3 control-label">Start Year (optional)</label>
+				      <div class="col-md-1">
 				        <input type="text" class="form-control" id="start-year" placeholder="YYYY">
 				      </div>
 				      <label for="numberOfResults" class="col-md-2 control-label">End Year (optional)</label>
-				      <div class="col-md-2">
+				      <div class="col-md-1">
 				        <input type="text" class="form-control" id="end-year" placeholder="YYYY">
 				      </div>
 				    </div>		
@@ -65,8 +65,12 @@
 			</form>
 		</div> <!-- div.row -->
 	</div>
+	
 
-	<div id="results" class="container-fluid">
+	<div class="container-fluid">
+		<div class="row col-md-10 col-md-offset-1 form-container">
+			<div id="results"></div>
+		</div>
 		<!-- <div class="row col-md-10 col-md-offset-1"></div> -->
 	</div>
 
@@ -75,7 +79,7 @@
 	<!-- JS Links -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="nyc.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/nyc.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		
 	// // for... blah blah 

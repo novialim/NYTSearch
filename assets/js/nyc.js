@@ -51,11 +51,19 @@
 		  console.log(result.response.docs);
 		  responseDocs = result.response.docs;
 		  $('#results').empty();
+
+	  		// Counter to keep track of article numbers as they come in
+			var articleCounter = 0;
+
 		  
 		  for (var i=0; i<responseDocs.length; i++) {
+
+		  	// Add to the Article Counter (to make sure we show the right number)
+		    articleCounter++;
+
 		  	var r = responseDocs[i];
   			var wrap = $('<div>');
-			wrap.addClass('result-wrap row col-md-10 col-md-offset-1');
+			wrap.addClass('well result-wrap row col-md-10 col-md-offset-1');
 
 
 			var h2 = $('<h2>');
