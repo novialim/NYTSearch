@@ -67,21 +67,27 @@
 
 
 			var h2 = $('<h2>');
-			var link = $('<a>');
+			// var link = $('<a>');
 			var p = $('<p>');
 
 			// var x = r.headline.main;
 			// console.log('x',x);
 
 			h2.text( r.headline.main );
-			link.attr('href', r.web_queryURL);
+			// link.attr('href', r.web_queryURL);
 			p.text(r.snippet);
 
-			wrap.append(link);
 			wrap.append(h2);
 			wrap.append(p);
+			
+			wrap.append(
+          		"<a href='" + r.web_url + "'>" +
+          		r.web_url + "</a>"
+        	);
+
 
 			$('#results').append(wrap);
+
 		  };
 
 
